@@ -29,30 +29,79 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* Make sidebar smaller */
+/* Sidebar base sizing; will be overridden by resizer via CSS var */
 .theme-doc-sidebar-container {
-  width: 200px !important;
-  min-width: 200px !important;
+  width: var(--doc-sidebar-width, 240px);
+  min-width: var(--doc-sidebar-width, 240px);
+  position: relative;
 }
 
 .theme-doc-sidebar {
-  width: 200px !important;
+  width: var(--doc-sidebar-width, 240px);
 }
-
 
 nav.menu > ul.menu__list > li:first-child {
   display: none;
 }
 
-
-.menu__list li:nth-child(2) div.menu__list-item-collapsible {
-  display: none;
+/* Sidebar search input styling */
+#sidebar-search-input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease;
+  font-size: 14px;
 }
 
+#sidebar-search-input:focus {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ifm-color-primary) 20%, transparent);
+}
 
-/* Adjust main content area to accommodate smaller sidebar */
-.theme-doc-layout-main {
-  margin-left: 250px !important;
+#sidebar-search-input::placeholder {
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* Resizer handle */
+.theme-doc-sidebar-resizer {
+  position: absolute;
+  top: 0;
+  right: -3px;
+  width: 6px;
+  height: 100%;
+  cursor: col-resize;
+  background: transparent;
+  user-select: none;
+}
+
+.theme-doc-sidebar-resizer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2px;
+  width: 2px;
+  background: var(--ifm-color-emphasis-200);
+  opacity: 0;
+  transition: opacity .15s ease;
+}
+
+.theme-doc-sidebar-resizer:hover::after,
+body.sidebar-resizing .theme-doc-sidebar-resizer::after {
+  opacity: 1;
+}
+
+/* Improve resizing UX */
+body.sidebar-resizing {
+  cursor: col-resize;
+  user-select: none;
 }
 
 

@@ -26,5 +26,3 @@ Our help center is organized into clear sections to help you find exactly what y
 - Feature explanations
 - Best practices
 - Troubleshooting guides
-
-Start exploring by clicking on any section in the sidebar!

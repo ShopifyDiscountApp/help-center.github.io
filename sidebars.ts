@@ -5,15 +5,15 @@ const sidebars: SidebarsConfig = {
   docs: [
     'index',
     {
-      type: 'category',
-      label: 'Articles',
-      items: [
-        'articles/article-1',
-        'articles/article-2',
-        'articles/article-3',
-        'articles/article-4',
-      ],
+      type: 'html',
+      value:
+        '<input id="sidebar-search-input" type="text" placeholder="Search in sidebar..." aria-label="Search in sidebar" />',
+      defaultStyle: true,
     },
+    'articles/article-1',
+    'articles/article-2',
+    'articles/article-3',
+    'articles/article-4',
   ],
 };
 
