@@ -2,11 +2,10 @@
 module.exports = {
     title: 'Help Center',
     url: 'https://shopifydiscountapp.github.io',
-    baseUrl: '/help-center.github.io/',
+    baseUrl: '/help-center/',
     organizationName: 'shopifyDiscountApp',
     projectName: 'help-center.github.io',
     favicon: 'img/favicon.ico',
-    deploymentBranch: 'main',
     trailingSlash: false,
     clientModules: ['./src/clientModules/sidebarSearch.js'],
     presets: [
