@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main   # və ya hansı branch-dən deploy etmək istəyirsənsə
+      - gh-pages
 
 permissions:
   contents: read
