@@ -6,7 +6,7 @@ module.exports = {
     organizationName: 'shopifyDiscountApp',
     projectName: 'help-center.github.io',
     favicon: 'img/favicon.ico',
-    deploymentBranch: 'main',
+    deploymentBranch: 'gh-pages',
     trailingSlash: false,
     clientModules: ['./src/clientModules/sidebarSearch.js'],
     presets: [
