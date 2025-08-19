@@ -3,8 +3,12 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+const organizationName = "shopifyDiscountApp";
+const projectName = "help-center.github.io";
 
 const config: Config = {
+  organizationName,
+  projectName,
   title: 'Help Center',
   tagline: 'Find answers to your questions',
   favicon: 'img/favicon.ico',

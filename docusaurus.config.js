@@ -1,8 +1,8 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
     title: 'Help Center',
-    url: 'https://help.optionify.com',
-    baseUrl: '/',
+    url: 'https://shopifydiscountapp.github.io',
+    baseUrl: '/help-center.github.io/',
     organizationName: 'shopifyDiscountApp',
     projectName: 'help-center.github.io',
     favicon: 'img/favicon.ico',
