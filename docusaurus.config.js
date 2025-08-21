@@ -1,12 +1,11 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
     title: 'Help Center',
-    url: 'https://shopifydiscountapp.github.io',
-    baseUrl: '/help-center.github.io/',
+    url: 'https://help.optionify.co',
+    baseUrl: '/',
     organizationName: 'shopifyDiscountApp',
-    projectName: 'help-center.github.io',
+    projectName: 'help-center',    
     favicon: 'img/favicon.ico',
-    deploymentBranch: 'main',
     trailingSlash: false,
     clientModules: ['./src/clientModules/sidebarSearch.js'],
     presets: [
